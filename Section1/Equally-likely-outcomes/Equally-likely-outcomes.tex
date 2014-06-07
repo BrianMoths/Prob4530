@@ -1,0 +1,75 @@
+\documentclass{ximera}
+
+%\input{preamble.tex} %% we can turn off input when making a master document
+
+\outcome{Combinatory and Probability.}
+
+\title{Equally likely outcomes.}
+
+\begin{document}
+\begin{abstract}
+how many words? and some games.
+\end{abstract}
+\maketitle
+
+\begin{question}
+How many "words" can be spelled using the letters from the work assassins (including the word assassins)?
+     \begin{solution}
+           The answer is \answer{$1512$}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+In a standard $52$ card deck there are $4$ suits:  spades, hearts, diamonds, and clubs.  Each suit consists of 13 different values:  $2$, $3$, ..., $10$, J, Q, K, A. 
+
+a)  How many $5$ card hands contain at least one pair?  (two cards of the same value)
+     \begin{solution}
+           The answer is \answer{$1281072$}.
+     \end{solution}
+     
+b)  How many $5$ card hands contain a three of a kind?  (three cards of the same value)
+     \begin{solution}
+           The answer is \answer{$54912$}.
+     \end{solution}
+     
+c)  How many $5$ card hands are a full house?  (a paird of on value and three of a kind of another value)
+     \begin{solution}
+           The answer is \answer{$3744$}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+What are the probabilities of each of the hands in a, b, and c from question 2?
+     \begin{solution}
+           The probability of the event a is \answer{$1281072/2598960$}.
+     \end{solution}
+      \begin{solution}
+           The probability of the event b is \answer{$54912/2598960$}.
+     \end{solution}
+      \begin{solution}
+           The probability of the event c is \answer{$3744/2598960$}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+Suppose that you have two fair dice with $n$ sides.  The first die has faces with numbers $1, 2, ..., n$  The second die has faces with numbers $n, n+1, n+2, ..., 2n-1$.  You roll the dice.
+
+a)  Determine the probability that the sum of the faces up is $n$.
+     \begin{solution}
+           The answer is \answer{$0$}.
+     \end{solution}
+
+b)  Determine the probability that the sum of the faces up is $2n$.
+     \begin{solution}
+           The answer is \answer{$1/2$}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+Suppose that you and a friend play a game with the following rules:  there is a green player and a blue player,  there are $2$ green marbles and $2$ blue marbles in a hat, the players alternate drawing a marble from the hat, and a coin is tossed to determine who goes first.  To win, a player must draw their marble (the green player must draw a green marble to win), and if a player does not draw their marble, then they add a marble of the opponents color to the hat.  Suppose that the green player has won the coin toss.  Determine the probability that the blue player wins on or before his/her second turn.
+     \begin{solution}
+           The answer is \answer{$5/16$}.
+     \end{solution}
+\end{question}
+
+\end{document}
