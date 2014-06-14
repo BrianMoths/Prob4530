@@ -1,7 +1,5 @@
 \documentclass{ximera}
 
-%\input{preamble.tex} %% we can turn off input when making a master document
-
 \title{Section 1}
 
 \begin{document}
@@ -10,6 +8,32 @@ Introduction to probability.
 \end{abstract}
 \maketitle
 
-This section introduces the basic concepts of probability.
+This section introduces the basic concepts of probability. \vspace{.25cm}
+
+We will consider experiments whose outcomes cannot be predicted with certain. Examples of an experiment include rolling a die or flipping two coins.
+
+The {\it outcome space} $\Omega$ of an experiment is the set of all possible outcomes for the experiment. The outcome space for the experiment of rolling a dice is $\{\,1,2,3,4,5,6\,\}$ and the outcome space for the experiment of flipping two coins is $\{\, \text{Head-Head , Head-Tail, Tail-Head, Tail-Tail} \,\}$.
+
+An {\it event} $A$ is a subset of the sample space: the event of rolling an even number with a dice consist of three outcomes $\{\,2,4,6\,\}$ and the event of flipping two tails with two coins consist of one outcome $\{\, \text{Tail-Tail} \,\}$. 
+
+When the outcome of an experiment is just as likely as another, as in the previous two examples of experiments, the outcomes are said to be {\it equally likely}. \vspace{.25cm}
+
+The following definition is from Wikipedia: 
+
+\href{http://en.wikipedia.org/wiki/Probability}{Probability} is a measure of the likeliness that an event will occur. \vspace{.25cm}
+
+If the number of all outcomes $\Omega$ of an experiment is finite and are equally likely, then the probability of an event $A$ is defined by
+\[\text{Pr}(A) = \frac{ \#(A) }{ \#(\Omega)}.
+\]
+
+In section $6.1$ from \href{ http://www.feynmanlectures.caltech.edu/I_06.html#Ch6-S1}{The Feynman Lectures on Physics}, Feynman gives a nice explanation on how to justify the previous formula. If you have time you must read all Chapter $6$. \vspace{.25cm}
+
+Probabilities defined by this formula for equally likely outcomes are fractions between $0$ and $1$. The number $1$ represents certainty and the number $0$ represents impossibility. 
+For our examples we have:
+
+\begin{align*}
+\text{Pr}&( \text{rolling an even number with a dice} ) = \frac{3}{6}\,,  \\
+\text{Pr}&( \text{flipping two tails with two coins} ) = \frac{1}{4}\,.
+\end{align*}
 
 \end{document}
