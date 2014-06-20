@@ -1,0 +1,98 @@
+\documentclass{ximera}
+
+%\input{preamble.tex} %% we can turn off input when making a master document
+
+\outcome{to learn definition and properties of random variables.}
+
+\title{Random variables.}
+
+\begin{document}
+\begin{abstract}
+basic definitions
+\end{abstract}
+\maketitle
+
+A {\it random variable} $X$ is a function with domain the sample space and range a subset of the real numbers. Because the value of a random variable is determined by the outcomes of the experiment, we may assign probabilities to the possible values of the random variable. \vspace{.35cm} 
+
+\begin{question}
+Three dice are rolled. What is the probability that the total number of spots showing is $11$ or more ?
+     \begin{hint}
+          No long calculations ! 
+     \end{hint}
+     \begin{solution}
+          The probability is equal to \answer{1/2}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+Find a number $m$ such that if five dice are rolled, the probability that the total number of spots showing is $m$ or more is the same as the probability of $11$ or more spots from three dice.
+     \begin{hint}
+          $m$ is an integer.
+     \end{hint}
+     \begin{solution}
+          The number $m$ is equal to \answer{18}.
+     \end{solution}
+\end{question}
+
+Let $X$ be the number of heads in $15$ fair coin tosses, $Y$ a number picked uniformly at random from $\{\, 0,1,\dots,15 \,\}$, independently of $X$. Let $Z = max(X,Y)$.
+
+\begin{question}
+     \begin{solution}
+           Determine $P(Z=5) = $ \answer{19959/524288}.
+     \end{solution}
+\end{question}
+
+(Think about the following setup, it can help you to calculate the previous probability) For the previous problem, find a formula for $P(Z=k)$ which will depend on $k$, for $k=0,1,\dots,15$. \vspace{.35cm}
+
+Let $X_{1}$ and $X_{2}$ denote the number obtained on two rolls of a fair die. Let $X=min(X_1, X_2)$ and $Y=max(X_1, X_2)$.
+
+\begin{question}
+     \begin{solution}
+          Determine $P(X=Y) = $ \answer{1/6}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+     \begin{solution}
+          Determine $P(X<Y) =$ \answer{5/6}.
+     \end{solution}
+\end{question}
+
+Suppose a fair die rolled eight times. Find numerical values for the expectations of each of the following random variables.
+
+\begin{question}
+     a) The sum of the numbers in the eight rolls
+     \begin{solution}
+          The required expectation is \answer{28}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+     b) The maximum number in the first three rolls.
+     \begin{solution}
+          The required expectation is \answer{119/24}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+     c) The number of multiples of three in the eight rolls.
+     \begin{solution}
+          The required expectation is \answer{8/3}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+     d) The number of faces which fail to appear in the eight rolls.
+     \begin{solution}
+          The required expectation is \answer{390625/279936}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+     e) The number of different faces that appear in the eight rolls.
+     \begin{solution}
+          The required expectation is \answer{1288991/279936}.
+     \end{solution}
+\end{question}
+
+\end{document}

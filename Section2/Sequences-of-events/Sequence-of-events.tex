@@ -1,0 +1,58 @@
+\documentclass{ximera}
+
+%\input{preamble.tex} %% we can turn off input when making a master document
+
+\outcome{generalization of conditional probability and independence.}
+
+\title{Sequence of events / Independence.}
+
+\begin{document}
+\begin{abstract}
+probabilities determined by a sequences of events or outcomes.
+\end{abstract}
+\maketitle
+
+\begin{question} 
+     {\bf The birthday problem.} Suppose you are one of $n$ students in a class. What is the smallest value of $n$ such that $P(\text{at least 2 birthdays coincide})\geq \tfrac{1}{2}$?
+     \begin{solution}
+          The smallest value of $n$ is \answer{$23$}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+There are twelve signs of the zodiac. How many people must be present for there to be at least a $50\,\%$ chance that two or more of them were born under the same sign ?
+     \begin{solution}
+     The answer is \answer{$5$}.
+     \end{solution}
+\end{question}
+
+Suppose that $A$, $B$, and $C$ are pairwise independent.  
+
+$ P(A) = 0.3 $
+
+$ P(B) = 0.4 $
+
+$ P(A\cap B\cap C) = 0$
+
+$ P(A\cup B\cup C) = 0.73$
+
+\begin{question}
+Use the information above to determine $P(C)$.
+     \begin{hint}
+          inclusion - exclusion formula.
+     \end{hint}
+     \begin{solution}
+     $P(C) = $ \answer{$0.5$}. 
+     \end{solution}
+\end{question}
+
+(Think about the following questions)  Are $A$, $B$, and $C$ independent ? Why ?
+
+\begin{question}
+A couple has two children.  Determine the probability that the couple has two girls given that they have one girl that was born between 5am and 8am.     
+     \begin{solution}
+           The answer is \answer{$15/31$}.
+     \end{solution}
+\end{question}
+
+\end{document}

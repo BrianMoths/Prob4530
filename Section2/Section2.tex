@@ -1,0 +1,39 @@
+\documentclass{ximera}
+
+\title{Section 2}
+
+\begin{document}
+\begin{abstract}
+Probability axioms / Binomial distribution.
+\end{abstract}
+\maketitle
+
+{\bf Probability axioms.} The probability function satisfies the following axioms, known as \href{http://en.wikipedia.org/wiki/Probability_axioms}{Kolmogorov axioms}:
+\vspace{.35cm}
+\newline
+{\bf Axiom 1.} For any event $A$: 
+\[ 
+\text{Pr}(A)\geq 0 \text{ for all }A\subset \Omega .  
+\]
+{\bf Axiom 2.} For the outcome space $\Omega$:
+\[ 
+\text{Pr}(\Omega) = 1. 
+\] 
+{\bf Axiom 3.}  For any countable sequence of mutually disjoint events $\{\,A_{i}\,\}_{i\geq 1}$:
+\[  
+\text{Pr}(A_{1} \cup A_{2} \cup \cdots ) = \sum_{i=1}^{\infty} P(A_{i})
+\] 
+\vspace{1cm}
+\newline
+{\bf Binomial distribution.} For $n$ independent trials, with probability $p$ of success and probability $q=1-p$ of failure on each trial, the probability of $k$ successes is given by the \href{http://en.wikipedia.org/wiki/Binomial_distribution}ß{binomial probability function:} 
+\[
+\text{Pr}( \,\, k \text{ successess in } n \text{ trials }) = {n\choose k}p^{k}(1-p)^{n-k}\,.
+\]
+where ${n\choose k}$, called $n$ {\it choose} $k$, is the number of different possible patterns of $k$ success and $n-k$ failures in $n$ trials, given by the formula
+\[
+{n\choose k} = \frac{n!}{k!(n-k)!} = \frac{n(n-1)\cdots(n-k+1)}{k(k-1)\cdots 1}\,.
+\]
+Here the $k!$ is $k$ {\it factorial}, the product of the first $k$ integers for $k\geq 1$, and $0! = 1$.
+
+\end{document}
+
