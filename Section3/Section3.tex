@@ -1,0 +1,35 @@
+\documentclass{ximera}
+
+\title{Section 3}
+
+\begin{document}
+\begin{abstract}
+Moment and probability generating functions.
+\end{abstract}
+\maketitle
+
+For a discrete random variable $X$, we define the probability mass function (pmf) by the equation
+\[
+p(x) = \text{Pr}(X=x)\,.
+\]
+A probability mass function gives the probability that a discrete random variable is exactly equal to some value. \vspace{.25cm}
+
+The moment generating function of a discrete random variable $X$, denoted by $M_{X}(t)$, is defined as
+\[  
+M_{X}(t) = E( e^{tX} ) = \sum_{x} e^{tx}p(x) \,,
+\]
+provided that the expectation exists for $t$ in some neighborhood of $0$. \vspace{.25cm}
+
+ The probability generating function for a discrete random variable $X$ taking values in the non-negative integers, denoted by $G_{X}(z)$, is defined as
+ \[
+ G_{X}(z) = E(z^{X}) = \sum_{x=0}^{\infty} z^{x}p(x) \,.
+ \]
+ 
+We have the following identities
+\begin{align*}
+E(X^{k}) &= M^{(k)}_{X}(0) \,,  \\
+ p(k) &= \frac{G^{(k)}_{X}(0)}{k!} \,.
+\end{align*}
+where $k$ should be a non-negative integer and we are taking derivatives. 
+
+\end{document}

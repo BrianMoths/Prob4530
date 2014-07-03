@@ -1,0 +1,66 @@
+\documentclass{ximera}
+
+%\input{preamble.tex} %% we can turn off input when making a master document
+
+\outcome{To solve problems related to discrete random variables.}
+
+\title{Discrete random variables}
+
+\begin{document}
+\begin{abstract}
+Binomial, Geometric and Poisson random variables
+\end{abstract}
+\maketitle
+
+A random variable $X$ has expectation $10$ and standard deviation $5$.
+
+\begin{question} 
+Find the smallest upper bound you can for $P(X\geq 20)$
+     \begin{hint}
+          use Chebychev's inequality.
+     \end{hint}
+     \begin{solution}
+          The smallest upper bound is \answer{$1/4$}.
+     \end{solution}
+\end{question}
+
+Let $W_{1}$ and $W_{2}$ be independent geometric random variables with parameters $0.2$ and $0.4$. Find
+
+\begin{question}
+a) $P(W_{1}=W_{2})$
+     \begin{solution}
+          The answer is \answer{$2/13$}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+b) $P(W_{1} < W_{2})$
+     \begin{solution}
+          The answer is \answer{$3/13$}.
+     \end{solution}
+\end{question}
+
+Suppose that $X$ and $Y$ are independent Poisson random variables with parameters $2$ and $3$, respectively. Find
+
+\begin{question}
+a) $P(X=1 \text{ and } Y=2)$
+     \begin{solution}
+          The answer is \answer{$4e^{-5}$}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+b) $P\bigg( \frac{X + Y}{2} \geq 1 \bigg)$
+     \begin{solution}
+          The answer is \answer{$1-e^{-5}-5e^{-5}$}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+b) $P\bigg( X=1 \,\bigg\vert\, \frac{X + Y}{2} = 2  \bigg)$
+     \begin{solution}
+          The answer is \answer{$216/625$}.
+     \end{solution}
+\end{question}
+
+\end{document}
