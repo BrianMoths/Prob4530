@@ -1,0 +1,61 @@
+\documentclass{ximera}
+
+%\input{preamble.tex} %% we can turn off input when making a master document
+
+\outcome{To solve problems related to Poisson distribution.}
+
+\title{Poisson distribution}
+
+\begin{document}
+\begin{abstract}
+A few more exercises about Poisson random variables
+\end{abstract}
+\maketitle
+
+Let $X$ be a Poisson random variable with parameter $2$. Calculate 
+
+\begin{question}
+a) $E(3X+5)$
+     \begin{solution}
+          The answer is \answer{$11$}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+b) $\text{Var}(3X+5)$
+     \begin{solution}
+          The answer is \answer{$18$}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+c) $E\bigg( \frac{1}{1+X} \bigg)$
+     \begin{solution}
+          The answer is \answer{$( 1-e^(-2) )/2$}.
+     \end{solution}
+\end{question}
+
+A book has $250$ pages. The number of mistakes on each page is a Poisson random variable with mean $0.02$, and is independent of the number of mistakes on all other pages.
+
+\begin{question}
+a) What is the expected number of pages with no mistakes ?
+     \begin{solution}
+          The answer is \answer{$245.05$} (round to two decimals).
+     \end{solution}
+\end{question}
+
+\begin{question}
+b) A person proofreading the book finds a given mistake with probability $0.9$. What is the expected number of pages where this person will find a mistake ? 
+     \begin{solution}
+          The answer is \answer{$4.46$} (round to two decimals).
+     \end{solution}
+\end{question}
+
+\begin{question}
+b) What, approximately, is the probability that the book has two or more pages with mistakes ? 
+     \begin{solution}
+          The answer is \answer{$0.96$} (round to two decimals).
+     \end{solution}
+\end{question}
+
+\end{document}
