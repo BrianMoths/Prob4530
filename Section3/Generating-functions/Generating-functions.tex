@@ -13,9 +13,12 @@ Calculations
 \maketitle
 
 \begin{question} 
-Let $X$ and $Y$ be independent random variables with moment generating functions $f(t)$ and $g(t)$, respectively. Let $Z=X+Y$. Determine $M_{Z}(t)$, the moment generating function of $Z$, in terms of $f(t)$ and $g(t)$. 
+Let $X$ and $Y$ be independent random variables with moment generating functions $f(t)$ and $g(t)$, respectively. Let $Z=X+Y$. Determine $M_{Z}(t)$, the moment generating function of $Z$, in terms of $f(t)$ and $g(t)$.
      \begin{hint}
           $E(e^{tZ}) = E(e^{tX}e^{tY})$
+     \end{hint}
+     \begin{hint}
+          The answer must be expressed in terms of $f(t)$ and $g(t)$.
      \end{hint}
      \begin{solution}
           The moment generating function of $Z$ is \answer{$f(t)g(t)$}.
@@ -23,7 +26,10 @@ Let $X$ and $Y$ be independent random variables with moment generating functions
 \end{question}
 
 \begin{question}
-Let $X$ and $Y$ be independent random variables that are both geometric distributions with likelihood of success equal to $p$. Using the previous problem, determine the moment generating function of $Z=X+Y$. 
+Let $X$ and $Y$ be independent random variables that are both geometric distributions with likelihood of success equal to $p$. Using the previous problem, determine the moment generating function of $Z=X+Y$.
+     \begin{hint}
+          The answer must be an algebraic expression in terms of $p$, $e$ and $t$.
+     \end{hint}
      \begin{solution}
           The moment generating function of $Z$ is \answer{$(  (  p e^t ) / (   1 - e^t (1-p)  )  )^2 $}.
      \end{solution}
@@ -31,10 +37,12 @@ Let $X$ and $Y$ be independent random variables that are both geometric distribu
 
 \begin{question}
 Let $X$ have a Poisson distribution with expectation $m$. Determine the probability generating function $G(z)$ of $X$.
+     \begin{hint}
+          The answer must be an algebraic expression in terms of $m$, $e$ and $z$.
+     \end{hint}
      \begin{solution}
           The probability generating function of $X$ is \answer{$e^(m*(z-1))$}.
      \end{solution}
 \end{question}
-
 
 \end{document}
