@@ -1,0 +1,24 @@
+\documentclass{ximera}
+
+\title{Section 4}
+
+\begin{document}
+\begin{abstract}
+Continuous random variables.
+\end{abstract}
+\maketitle
+
+We say that a random variable $X$ is {\it continuous} if there exists a nonnegative function $f_{X}$ (not necessarily continuous) defined for all real numbers and having the property that for all $a\leq b$ we have:
+$$ \text{Pr}( a \leq X \leq b) = \int_{a}^{b} f_{X}(x)dx \,. $$
+We call the function $f$ the probability density function of the random variable $X$.\vspace{.25cm}
+
+The mean, variance and standard deviation are defined in the following way
+\begin{align*}
+E(X) &= \int_{-\infty}^{\infty} xf_{X}(x)dx\,,  \\
+\text{Var}(X) &= E(X^{2}) - (E(X))^{2}\,, \\
+\text{SD}(X) &= \sqrt{\text{Var}(X)}\,,
+\end{align*}
+where
+$$ E(X^{2}) = \int_{-\infty}^{\infty} x^{2}f_{X}(x)dx\,.  $$
+
+\end{document}

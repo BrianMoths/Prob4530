@@ -1,0 +1,62 @@
+\documentclass{ximera}
+
+%\input{preamble.tex} %% we can turn off input when making a master document
+
+\outcome{Solve problems about exponential distribution.}
+
+\title{Exponential distribution.}
+
+\begin{document}
+\begin{abstract}
+Exponential distribution.
+\end{abstract}
+\maketitle
+
+Suppose component lifetimes are exponentially distributed with mean $10$ hours. Find
+
+\begin{question} 
+     \begin{solution}
+          a) the probability that a component survives $20$ hours is  \answer{$e^(-2)$}.
+     \end{solution}
+\end{question}
+
+\begin{question} 
+     \begin{solution}
+          b) the median component lifetime is  \answer{$10*log(2)$}.
+     \end{solution}
+\end{question}
+
+\begin{question} 
+     \begin{solution}
+          c) the standard deviation of component lifetime is  \answer{$1/10$}.
+     \end{solution}
+\end{question}
+
+A Geiger counter is recording background radiation at an average rate of one hit per minute. Let $T_{3}$ be the time in minutes when the third hit occurs after the counter is switched on.
+
+\begin{question}
+     \begin{solution}
+          Find $P( 2 \leq T_{3} \leq 3 ) = $ \answer{$5e^(-2)-13e^(-4)$}.
+     \end{solution}
+\end{question} 
+
+If $T$ has exponential distribution with rate $m$, then $\text{int}T$, the greatest integer less than or equal to $T$, has a geometric $p$ distribution on $\{\, 0,1,2,\dots \,\}$.
+
+ \begin{question}
+     \begin{hint}
+          The solution must be an algebraic expression in terms of $m$.
+     \end{hint}
+     \begin{solution}
+          Find $p = $ \answer{$1-e^(-m)$}.
+     \end{solution}
+\end{question}
+
+Let $X$ have the exponential distribution with expectation $2$.
+
+\begin{question}
+     \begin{solution}
+          Determine $P( X > 7 \,\vert\,  X > 4 ) = $ \answer{$e^(-3/2)$}.
+     \end{solution}
+\end{question} 
+
+\end{document}
