@@ -1,0 +1,24 @@
+\documentclass{ximera}
+
+\title{Section 5}
+
+\begin{document}
+\begin{abstract}
+Joint distributions.
+\end{abstract}
+\maketitle
+
+There are many situations which involve presence of several random variables and we are interested in their joint behavior. \vspace{.25cm}
+
+Suppose that $X$ and $Y$ are two random variables defined on the same outcome space $\Omega$. The joint cumulative distribution function of X and Y is the function
+\begin{equation*}
+F_{XY}(x,y)=\text{Pr}(X\leq x,Y\leq y)=\text{Pr}(\{ s\in\Omega : X(s)\leq x \text{ and } Y(s)\leq y \}).
+\end{equation*}
+
+Two random variable $X$ and $Y$ are said to be joint continuous if there exists a function $f_{XY}(x,y)\geq 0$ with the property that for every subset $C$ of $\mathbb{R}^{2}$ we have
+\begin{equation*}
+\text{Pr}((X,Y)\in C)=\int\int_{(x,y)\in C} f_{XY}(x,y)dxdy.
+\end{equation*}
+The function $f_{XY}(x,y)$ is called the joint probability density function of $X$ and $Y$.
+
+\end{document}
