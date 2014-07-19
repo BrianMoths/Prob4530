@@ -1,0 +1,92 @@
+\documentclass{ximera}
+
+%\input{preamble.tex} %% we can turn off input when making a master document
+
+\outcome{practice more exercises about cumulative distribution functions.}
+
+\title{Some cumulative distribution functions.}
+
+\begin{document}
+\begin{abstract}
+distributive functions.
+\end{abstract}
+\maketitle
+
+Let $X$ be a continuous distribution with probability density function 
+\begin{equation*}
+f(x)=
+\begin{cases}
+\frac{c}{(x+3)^{3}}  & \text{ if } x\geq -2  \\
+0 & \text{otherwise.}
+\end{cases}
+\end{equation*}
+
+\begin{question} 
+     \begin{solution}
+          a) determine the value of $c = $  \answer{$2$}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+     \begin{hint}
+          do you remember partial fractions ?
+     \end{hint}
+     \begin{solution}
+          b) Determine $E\bigg( \frac{(x+3)^{2}}{x+4} \bigg) =$  \answer{$2*log(2)$}.
+     \end{solution}
+\end{question}
+
+\begin{question} 
+     \begin{solution}
+          c) Let $Y=X^{2}$. Determine $P(Y\leq 4) =$  \answer{$24/25$}.
+     \end{solution}
+\end{question}
+
+Let $X_{1}$, $X_{2}$, $X_{3}$ be independent, exponential distributions with expectation $2$, $3$ and $4$ respectively. Let $Y=\text{max}(X_{1},X_{2},X_{3})$ and $Z=\text{min}(X_{1},X_{2},X_{3})$.
+
+
+\begin{question}
+     \begin{hint}
+          the solution is a function in terms of $y$
+     \end{hint}
+     \begin{solution}
+          a) Determine the CDF of $Y$, \answer{$(1-e^(-y/2))(1-e^(-y/3))(1-e^(-y/4))$}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+     \begin{hint}
+          the solution is a function in terms of $y$
+     \end{hint}
+     \begin{solution}
+          b) Determine the PDF of $Y$,  \answer{$13e^(-13y/12)/12-5e^(-5y/6)/6-3e^(-3y/4)/4-7e^(-7y/12)/12+e^(-y/2)/2+e^(-y/3)/3+e^(-y/4)/4$}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+     \begin{hint}
+          the solution is a function in terms of $z$
+     \end{hint}
+     \begin{solution}
+          c) Determine the CDF of $Z$, \answer{$1-e^(-13z/12)$}.
+     \end{solution}
+\end{question}
+
+\begin{question}
+     \begin{hint}
+          the solution is a function in terms of $z$
+     \end{hint}
+     \begin{solution}
+          d) Determine the PDF of $Z$, \answer{$13e^(-13z/12)/12$}.
+     \end{solution}
+\end{question}
+
+Let $X$ and $Y$ be independent exponential random variables with means $2$ and $3$ respectively. Let $Z=X+Y$.
+
+\begin{question}
+     \begin{solution}
+          Determine $P(2\leq Z \leq 6) =$ \answer{$2e^(-3)-3e^(-2)-2e^(-1)+3e^(-2/3)$}.
+     \end{solution}
+\end{question}
+
+\end{document}
